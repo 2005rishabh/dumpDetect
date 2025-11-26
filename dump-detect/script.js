@@ -1,5 +1,5 @@
-const API_URL = 'http://localhost:5000/api/reports';
-const AUTH_URL = 'http://localhost:5000/api/auth';
+const API_URL = 'https://dumpdetect.onrender.com/api/reports';
+const AUTH_URL = 'https://dumpdetect.onrender.com/api/auth';
 
 // Auth State Management
 function isAuthenticated() {

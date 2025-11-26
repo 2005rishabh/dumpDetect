@@ -80,7 +80,7 @@ app.get('/api/reports/:id', async (req, res) => {
 app.post('/api/reports', upload.single('image'), async (req, res) => {
     try {
         const { location, description, coordinates } = req.body;
-        const imagePath = req.file ? `http://localhost:${PORT}/uploads/${req.file.filename}` : null;
+        const imagePath = req.file ? `${req.protocol}://${req.get('host')}/uploads/${req.file.filename}` : null;
 
         const newReport = new Report({
             location,

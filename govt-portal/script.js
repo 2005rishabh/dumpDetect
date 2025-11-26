@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api/reports';
+const API_URL = 'https://dumpdetect.onrender.com/api/reports';
 
 function getSeverityBadge(severity) {
     let color;
