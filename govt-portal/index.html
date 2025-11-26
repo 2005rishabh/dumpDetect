@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NWPM Portal - Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="banner">
+        <i class="fas fa-info-circle"></i> Reports Submitted via DumpDetect Citizen App are synced in real-time.
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <img src="assets/images/emblem.png" alt="Govt Emblem">
+            <div class="header-text">
+                <h1>National Water Pollution Monitoring Portal</h1>
+                <p>Central Dashboard for Reviewing Citizen-Reported Environmental Hazards</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" style="color: var(--accent-color);">Dashboard</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="dashboard-grid">
+            <div class="stat-card">
+                <h3>Total Reports Received</h3>
+                <div class="value">1,248</div>
+            </div>
+            <div class="stat-card">
+                <h3>Reports Today</h3>
+                <div class="value">42</div>
+            </div>
+            <div class="stat-card">
+                <h3>Major Hotspots</h3>
+                <div class="value" style="color: var(--danger-color);">5</div>
+            </div>
+            <div class="stat-card">
+                <h3>Pending Verifications</h3>
+                <div class="value" style="color: var(--warning-color);">18</div>
+            </div>
+        </div>
+
+        <div class="visuals-grid">
+            <div class="chart-container">
+                <h2 class="section-title">Pollution Trends (Last 6 Months)</h2>
+                <!-- Simple CSS Bar Chart Placeholder -->
+                <div style="display: flex; align-items: flex-end; justify-content: space-around; height: 250px; padding-top: 20px;">
+                    <div style="width: 40px; height: 40%; background: #0A2342; border-radius: 4px 4px 0 0; position: relative;" title="Jun"></div>
+                    <div style="width: 40px; height: 55%; background: #0A2342; border-radius: 4px 4px 0 0;" title="Jul"></div>
+                    <div style="width: 40px; height: 70%; background: #0A2342; border-radius: 4px 4px 0 0;" title="Aug"></div>
+                    <div style="width: 40px; height: 45%; background: #0A2342; border-radius: 4px 4px 0 0;" title="Sep"></div>
+                    <div style="width: 40px; height: 80%; background: #0A2342; border-radius: 4px 4px 0 0;" title="Oct"></div>
+                    <div style="width: 40px; height: 60%; background: #0A2342; border-radius: 4px 4px 0 0;" title="Nov"></div>
+                </div>
+                <div style="display: flex; justify-content: space-around; margin-top: 10px; color: #666; font-size: 0.8rem;">
+                    <span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span>
+                </div>
+            </div>
+            <div class="map-container">
+                <h2 class="section-title">Hotspot Map</h2>
+                <img src="assets/images/map_placeholder.png" alt="Hotspot Map" class="map-placeholder">
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="reports.html" class="btn">View All Reports</a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

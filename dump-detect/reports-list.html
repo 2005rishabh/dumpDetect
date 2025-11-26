@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Reports - DumpDetect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-water"></i> DumpDetect
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reports-list.html" class="active">Community Reports</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="awareness.html">Awareness</a></li>
+            </ul>
+        </nav>
+        <a href="report.html" class="btn-cta">Report Pollution</a>
+    </header>
+
+    <div class="container">
+        <h1 style="margin-bottom: 2rem;">Recent Community Reports</h1>
+        <div id="reports-list-container" class="grid-3">
+            <!-- Populated by JS -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Pollution - DumpDetect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-water"></i> DumpDetect
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reports-list.html">Community Reports</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="awareness.html">Awareness</a></li>
+            </ul>
+        </nav>
+        <a href="report.html" class="btn-cta">Report Pollution</a>
+    </header>
+
+    <div class="container" style="max-width: 600px;">
+        <div id="form-container">
+            <h1 style="margin-bottom: 1.5rem; text-align: center;">Submit a Report</h1>
+            <div class="card">
+                <form id="report-form">
+                    <div class="form-group">
+                        <label>Upload Evidence (Photo)</label>
+                        <input type="file" id="image-input" name="image" class="form-control" accept="image/*">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Location</label>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <input type="text" id="location-input" class="form-control"
+                                placeholder="Enter location or use auto-detect" required>
+                            <button type="button" class="btn-cta" onclick="detectLocation()"
+                                style="white-space: nowrap;"><i class="fas fa-map-marker-alt"></i> Detect</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea id="description-input" class="form-control" rows="4"
+                            placeholder="Describe the pollution type, smell, or source..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-cta" style="width: 100%; font-size: 1.1rem;">Submit Report</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="success-message" style="display: none; text-align: center; padding: 2rem;">
+            <div style="background: white; padding: 3rem; border-radius: 16px; box-shadow: var(--card-shadow);">
+                <i class="fas fa-check-circle"
+                    style="font-size: 4rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
+                <h2 style="margin-bottom: 1rem;">Report Sent Successfully!</h2>
+                <p style="color: #666; margin-bottom: 2rem;">Your report has been securely transmitted to the National
+                    Water Pollution Monitoring Portal for immediate review.</p>
+                <a href="reports-list.html" class="btn-cta">View Community Reports</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

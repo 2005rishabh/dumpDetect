@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awareness - DumpDetect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1621451537084-482c73073a0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 3rem;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: white;
+            /* Force white color to override global h1 style */
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .info-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .info-section img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .info-content h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .info-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .action-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .action-list li {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .action-list i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            background: #e3f2fd;
+            padding: 1rem;
+            border-radius: 50%;
+        }
+
+        @media (max-width: 768px) {
+            .info-section {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-water"></i> DumpDetect
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reports-list.html">Community Reports</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="awareness.html" class="active">Awareness</a></li>
+            </ul>
+        </nav>
+        <a href="report.html" class="btn-cta">Report Pollution</a>
+    </header>
+
+    <div class="hero-section">
+        <h1>Protect Our Water, Protect Our Future</h1>
+        <p>Water pollution is one of the biggest threats to our environment and health. Learn how you can make a
+            difference today.</p>
+    </div>
+
+    <div class="container">
+        <div class="info-section">
+            <div class="info-content">
+                <h2>The Silent Crisis</h2>
+                <p>Every day, millions of tons of industrial waste, agricultural runoff, and plastic debris enter our
+                    water bodies. This not only harms marine life but also contaminates the water we drink.</p>
+                <p>Polluted water transmits diseases like cholera, dysentery, typhoid, and polio. Contaminated drinking
+                    water is estimated to cause 485,000 diarrhoeal deaths each year.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Water Pollution">
+        </div>
+
+        <div class="grid-3" style="margin-bottom: 4rem;">
+            <div class="stat-card">
+                <div class="stat-number">80%</div>
+                <p>of wastewater flows back into the ecosystem without being treated or reused.</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">14M</div>
+                <p>tons of plastic end up in the ocean every year.</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">1 in 3</div>
+                <p>people globally do not have access to safe drinking water.</p>
+            </div>
+        </div>
+
+        <h2 style="text-align: center; margin-bottom: 2rem; font-size: 2rem;">How You Can Help</h2>
+        <div class="grid-3">
+            <div class="card">
+                <i class="fas fa-trash-alt"
+                    style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
+                <h3>Don't Dump Waste</h3>
+                <p>Never dispose of household chemicals, oil, or plastic in drains or rivers. They end up in our water
+                    supply.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-hand-holding-water"
+                    style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                <h3>Conserve Water</h3>
+                <p>Use water wisely. Less water usage means less wastewater that needs treatment.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-users" style="font-size: 3rem; color: #28a745; margin-bottom: 1rem;"></i>
+                <h3>Participate in Cleanups</h3>
+                <p>Join local community cleanup drives. Every piece of trash removed makes a difference.</p>
+            </div>
+        </div>
+
+        <div style="margin-top: 4rem; margin-bottom: 4rem;">
+            <h2 style="text-align: center; margin-bottom: 2rem; font-size: 2rem;">Official Government Channels</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem auto; color: #666;">
+                While DumpDetect helps community awareness, we encourage you to also report serious violations to
+                official government bodies for immediate action.
+            </p>
+            <div class="grid-3">
+                <a href="https://greentribunal.in/contact-us.php" target="_blank" class="card gov-link-card">
+                    <i class="fas fa-gavel" style="color: #2c3e50;"></i>
+                    <h3>National Green Tribunal</h3>
+                    <p>Report environmental violations directly to the NGT.</p>
+                    <span class="visit-link">Visit Site <i class="fas fa-external-link-alt"></i></span>
+                </a>
+                <a href="https://cpcb.nic.in/contact-us/" target="_blank" class="card gov-link-card">
+                    <i class="fas fa-building" style="color: #e67e22;"></i>
+                    <h3>CPCB</h3>
+                    <p>Central Pollution Control Board contact and reporting.</p>
+                    <span class="visit-link">Visit Site <i class="fas fa-external-link-alt"></i></span>
+                </a>
+                <a href="https://pgportal.gov.in/" target="_blank" class="card gov-link-card">
+                    <i class="fas fa-user-shield" style="color: #e74c3c;"></i>
+                    <h3>PG Portal</h3>
+                    <p>Centralized Public Grievance Redress and Monitoring System.</p>
+                    <span class="visit-link">Visit Site <i class="fas fa-external-link-alt"></i></span>
+                </a>
+                <a href="https://nwm.gov.in/grievances%E2%80%99-redressal" target="_blank" class="card gov-link-card">
+                    <i class="fas fa-water" style="color: #3498db;"></i>
+                    <h3>National Water Mission</h3>
+                    <p>Grievance redressal for water-related issues.</p>
+                    <span class="visit-link">Visit Site <i class="fas fa-external-link-alt"></i></span>
+                </a>
+                <a href="https://investgnida.in/myGNIDAServices/CitizenServices/Citizen_Services.aspx" target="_blank"
+                    class="card gov-link-card">
+                    <i class="fas fa-city" style="color: #9b59b6;"></i>
+                    <h3>GNIDA Citizen Services</h3>
+                    <p>Greater Noida Industrial Development Authority services.</p>
+                    <span class="visit-link">Visit Site <i class="fas fa-external-link-alt"></i></span>
+                </a>
+                <a href="https://gbnagar.nic.in/service/public_grievance/" target="_blank" class="card gov-link-card">
+                    <i class="fas fa-map-marked-alt" style="color: #27ae60;"></i>
+                    <h3>Gautam Buddha Nagar</h3>
+                    <p>District public grievance reporting portal.</p>
+                    <span class="visit-link">Visit Site <i class="fas fa-external-link-alt"></i></span>
+                </a>
+            </div>
+        </div>
+
+        <div
+            style="background: #f8f9fa; padding: 3rem; border-radius: 20px; margin-bottom: 4rem; box-shadow: inset 0 0 20px rgba(0,0,0,0.05);">
+            <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2rem;">How to Report Effectively</h2>
+            <div class="process-container">
+                <div class="process-step">
+                    <div class="icon-circle">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>1. Capture Evidence</h3>
+                    <p>Take clear photos or videos of the dumping site. Ensure the location is visible.</p>
+                </div>
+                <div class="arrow-separator">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="process-step">
+                    <div class="icon-circle">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>2. Note Details</h3>
+                    <p>Note the exact location, time, and type of waste (industrial, plastic, etc.).</p>
+                </div>
+                <div class="arrow-separator">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="process-step">
+                    <div class="icon-circle">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <h3>3. Submit Report</h3>
+                    <p>Use the links above or our app to submit. Provide as much detail as possible.</p>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .gov-link-card {
+                text-decoration: none;
+                color: inherit;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                transition: all 0.3s ease;
+                border: 1px solid transparent;
+            }
+
+            .gov-link-card:hover {
+                transform: translateY(-5px);
+                border-color: var(--primary-color);
+                background: #f0f7ff;
+            }
+
+            .gov-link-card i {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .gov-link-card h3 {
+                font-size: 1.2rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .gov-link-card p {
+                font-size: 0.9rem;
+                color: #666;
+                margin-bottom: 1rem;
+                flex-grow: 1;
+            }
+
+            .visit-link {
+                color: var(--primary-color);
+                font-weight: 600;
+                font-size: 0.9rem;
+            }
+
+            .process-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                flex-wrap: wrap;
+            }
+
+            .process-step {
+                flex: 1;
+                min-width: 250px;
+                text-align: center;
+                background: white;
+                padding: 2rem;
+                border-radius: 16px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            }
+
+            .icon-circle {
+                width: 80px;
+                height: 80px;
+                background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1.5rem auto;
+                color: white;
+                font-size: 2rem;
+                box-shadow: 0 4px 10px rgba(70, 139, 255, 0.3);
+            }
+
+            .arrow-separator {
+                color: #ccc;
+                font-size: 2rem;
+            }
+
+            @media (max-width: 768px) {
+                .arrow-separator {
+                    display: none;
+                }
+
+                .process-container {
+                    flex-direction: column;
+                }
+            }
+        </style>
+
+        <div style="margin-top: 4rem;">
+            <h2 style="margin-bottom: 2rem;">Simple Actions, Big Impact</h2>
+            <ul class="action-list">
+                <li>
+                    <i class="fas fa-ban"></i>
+                    <div>
+                        <h3>Say No to Single-Use Plastics</h3>
+                        <p>Carry a reusable water bottle and shopping bag. Plastic waste is a major water pollutant.</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-recycle"></i>
+                    <div>
+                        <h3>Recycle Properly</h3>
+                        <p>Ensure you separate your waste. Recyclables that end up in landfills often leach into
+                            groundwater.</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-bullhorn"></i>
+                    <div>
+                        <h3>Report Pollution</h3>
+                        <p>Use DumpDetect to report illegal dumping or pollution spots. Your vigilance can save a river.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
